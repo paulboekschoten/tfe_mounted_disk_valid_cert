@@ -40,3 +40,34 @@ variable "route53_subdomain" {
   description = "the subdomain of the url"
   type        = string
 }
+
+variable "instance_type" {
+  description = "The instance type to use for the TFE host."
+  type        = string
+  default     = "m5.xlarge"
+}
+
+variable "tfe_encryption_password" {
+  description = "Password used to encrypt TFE data."
+  type        = string
+}
+
+variable "replicated_password" {
+  description = "Replicated dahsboard password."
+  type        = string
+}
+
+variable "admin_username" {
+  description = "Username for the TFE admin account."
+  type        = string
+}
+
+variable "admin_email" {
+  description = "Email address for the TFE admin account."
+  type        = string
+}
+
+variable "admin_password" {
+  description = "Password for the TFE admin account."
+  type        = string
+}
