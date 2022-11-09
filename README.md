@@ -19,11 +19,11 @@ This terraform code creates
 # How to install TFE with valid certficates on AWS
 
 # TODO
- - [ ] Create a key pair
- - [ ] Create a security group
- - [ ] Create a security group rules
- - [ ] Create an EC2 instance
+ - [x] Create a key pair
+ - [x] Create a security group
+ - [x] Create a security group rules
  - [ ] Create valid certificates
+ - [ ] Create an EC2 instance
  - [ ] Install TFE 
    - [ ] Download TFE
    - [ ] Create settings.json

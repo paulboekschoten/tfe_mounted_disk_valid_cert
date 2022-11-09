@@ -25,3 +25,18 @@ variable "replicated_port" {
   type        = number
   default     = 8800
 }
+
+variable "cert_email" {
+  description = "Email address used to obtain ssl certificate."
+  type        = string
+}
+
+variable "route53_zone" {
+  description = "The domain used in the URL."
+  type        = string
+}
+
+variable "route53_subdomain" {
+  description = "the subdomain of the url"
+  type        = string
+}
