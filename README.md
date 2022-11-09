@@ -22,7 +22,7 @@ This terraform code creates
  - [x] Create a key pair
  - [x] Create a security group
  - [x] Create a security group rules
- - [ ] Create valid certificates
+ - [x] Create valid certificates
  - [ ] Create an EC2 instance
  - [ ] Install TFE 
    - [ ] Download TFE
@@ -31,6 +31,7 @@ This terraform code creates
    - [ ] Copy certificates
    - [ ] Copy license.rli
    - [ ] Create admin user
+ - [ ] Create DNS record
  - [ ] Documentation
 
 # DONE
