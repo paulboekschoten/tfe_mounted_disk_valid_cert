@@ -1,2 +1,5 @@
 region                  = "eu-west-3"               # AWS region to deploy in
 environment             = "tfe-valid-cert"          # Name of the environment, used in naming of resources
+cert_email              = "example@eample.com"      # The email address used to register the certificate.
+route53_zone            = "yourdomain.com"          # The domain of your hosted zone in route 53.
+route53_subdomain       = "yoursubdomain"           # The subomain of the URL.
