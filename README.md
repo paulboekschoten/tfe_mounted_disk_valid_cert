@@ -4,8 +4,11 @@ This repository installs Terraform Enterprise (TFE) with valid certificates in A
 This terraform code creates
  - A key pair
  - A security group
+ - Security group rules
+ - An Elastic IP
+ - A Route53 DNS entry
+ - Valid certificates
  - An Ubuntu virtual machine (22.04)
-   - Valid certificates
    - Replicated configuration
    - TFE settings json
    - Install latest TFE
