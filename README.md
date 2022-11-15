@@ -14,6 +14,8 @@ This terraform code creates
    - Install latest TFE
    - TFE Admin account
 
+# Diagram
+![](diagram/tfe_valid_certs.png)
 
 # Prerequisites
  - An AWS account with default VPC and internet access.
@@ -76,22 +78,22 @@ tfe_login = "https://tfe-valid-cert-paul-tf.tf-support.hashicorpdemo.com"
 - Click on the open button to go to TFE of go to the `tfe_login` url.  
 
 # TODO
-- [ ] Add diagram
-- [ ] Use template file instead of shell script
 
 # DONE
- - [x] Create manually
- - [x] Create a key pair
- - [x] Create a security group
- - [x] Create a security group rules
- - [x] Create valid certificates
- - [x] Create DNS record
- - [x] Create an EC2 instance
- - [x] Install TFE 
-   - [x] Download TFE
-   - [x] Create settings.json
-   - [x] Create replicated.conf
-   - [x] Copy certificates
-   - [x] Copy license.rli
-   - [x] Create admin user
- - [x] Documentation
+- [x] Create manually
+- [x] Create a key pair
+- [x] Create a security group
+- [x] Create a security group rules
+- [x] Create valid certificates
+- [x] Create DNS record
+- [x] Create an EC2 instance
+- [x] Install TFE 
+  - [x] Download TFE
+  - [x] Create settings.json
+  - [x] Create replicated.conf
+  - [x] Copy certificates
+  - [x] Copy license.rli
+  - [x] Create admin user
+- [x] Documentation
+- [x] Use template file instead of shell script
+- [x] Add diagram
