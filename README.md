@@ -76,7 +76,8 @@ tfe_login = "https://tfe-valid-cert-paul-tf.tf-support.hashicorpdemo.com"
 - Click on the open button to go to TFE of go to the `tfe_login` url.  
 
 # TODO
-
+- [ ] Add diagram
+- [ ] Use template file instead of shell script
 
 # DONE
  - [x] Create manually

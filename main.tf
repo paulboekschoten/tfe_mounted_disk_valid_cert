@@ -179,7 +179,7 @@ resource "aws_instance" "tfe" {
   key_name                    = aws_key_pair.tfe-keypair.key_name
   vpc_security_group_ids      = [aws_security_group.tfe_sg.id]
 
-  user_data = templatefile("${path.module}/scripts/user_data.sh", {
+  user_data = templatefile("${path.module}/scripts/user_data.tpl", {
     enc_password        = var.tfe_encryption_password,
     replicated_password = var.replicated_password,
     admin_username      = var.admin_username,
