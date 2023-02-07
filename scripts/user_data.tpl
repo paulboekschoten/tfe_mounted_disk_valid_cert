@@ -55,7 +55,7 @@ write_files:
       #!/bin/bash -eux
 
       curl -sL https://install.terraform.io/ptfe/stable > /tmp/install.sh
-      bash /tmp/install.sh
+      bash /tmp/install.sh release-sequence=${release_sequence}
 
       while ! curl -kLsfS --connect-timeout 5 https://${fqdn}/_health_check &>/dev/null ; do
         echo "INFO: TFE has not been yet fully started"

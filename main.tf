@@ -174,10 +174,10 @@ data "aws_ami" "ubuntu" {
 
 # EC2 instance
 resource "aws_instance" "tfe" {
-  ami                         = data.aws_ami.ubuntu.image_id
-  instance_type               = var.instance_type
-  key_name                    = aws_key_pair.tfe-keypair.key_name
-  vpc_security_group_ids      = [aws_security_group.tfe_sg.id]
+  ami                    = data.aws_ami.ubuntu.image_id
+  instance_type          = var.instance_type
+  key_name               = aws_key_pair.tfe-keypair.key_name
+  vpc_security_group_ids = [aws_security_group.tfe_sg.id]
 
   user_data = templatefile("${path.module}/scripts/user_data.tpl", {
     enc_password        = var.tfe_encryption_password,
@@ -186,6 +186,7 @@ resource "aws_instance" "tfe" {
     admin_email         = var.admin_email,
     admin_password      = var.admin_password
     fqdn                = local.fqdn
+    release_sequence    = var.release_sequence
   })
 
   root_block_device {
@@ -202,7 +203,7 @@ resource "aws_instance" "tfe" {
     private_key = tls_private_key.rsa-4096.private_key_pem
     host        = self.public_ip
   }
-  
+
   # copy private key
   provisioner "file" {
     content     = acme_certificate.certificate.private_key_pem

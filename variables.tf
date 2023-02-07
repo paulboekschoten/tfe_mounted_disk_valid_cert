@@ -71,3 +71,8 @@ variable "admin_password" {
   description = "Password for the TFE admin account."
   type        = string
 }
+
+variable "release_sequence" {
+  description = "Release number of the TFE version you wish to install."
+  type        = number
+}
