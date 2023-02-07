@@ -76,6 +76,7 @@ write_files:
         --data @/etc/tfe_initial_user.json \
         https://${fqdn}/admin/initial-admin-user?token=$initial_token | tee /etc/tfe_initial_user_token.json
 runcmd: 
+  - mkdir -p /tfe_data
   - bash /tmp/install-tfe.sh
 
 
